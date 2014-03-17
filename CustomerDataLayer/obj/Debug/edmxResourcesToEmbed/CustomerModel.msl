@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RUDUSModelStoreContainer" CdmEntityContainer="RUDUSEntities">
+    <EntitySetMapping Name="ccons">
+      <EntityTypeMapping TypeName="RUDUSModel.ccon">
+        <MappingFragment StoreEntitySet="ccon">
+          <ScalarProperty Name="cust_code" ColumnName="cust_code" />
+          <ScalarProperty Name="contct_code" ColumnName="contct_code" />
+          <ScalarProperty Name="unique_num" ColumnName="unique_num" />
+          <ScalarProperty Name="contct_type" ColumnName="contct_type" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="u_version" ColumnName="u_version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="csdts">
+      <EntityTypeMapping TypeName="RUDUSModel.csdt">
+        <MappingFragment StoreEntitySet="csdt">
+          <ScalarProperty Name="cust_code" ColumnName="cust_code" />
+          <ScalarProperty Name="deliver_to_code" ColumnName="deliver_to_code" />
+          <ScalarProperty Name="interfaced_manual" ColumnName="interfaced_manual" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="u_version" ColumnName="u_version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cuscs">
+      <EntityTypeMapping TypeName="RUDUSModel.cusc">
+        <MappingFragment StoreEntitySet="cusc">
+          <ScalarProperty Name="cust_code" ColumnName="cust_code" />
+          <ScalarProperty Name="intrnl_line_num" ColumnName="intrnl_line_num" />
+          <ScalarProperty Name="prod_line_code" ColumnName="prod_line_code" />
+          <ScalarProperty Name="sundry_chrg_table_id" ColumnName="sundry_chrg_table_id" />
+          <ScalarProperty Name="sort_line_num" ColumnName="sort_line_num" />
+          <ScalarProperty Name="item_code" ColumnName="item_code" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="price_uom" ColumnName="price_uom" />
+          <ScalarProperty Name="price_ext_code" ColumnName="price_ext_code" />
+          <ScalarProperty Name="effect_date" ColumnName="effect_date" />
+          <ScalarProperty Name="prev_price" ColumnName="prev_price" />
+          <ScalarProperty Name="prev_price_ext_code" ColumnName="prev_price_ext_code" />
+          <ScalarProperty Name="sep_invc_flag" ColumnName="sep_invc_flag" />
+          <ScalarProperty Name="modified_date" ColumnName="modified_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="u_version" ColumnName="u_version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="custs">
+      <EntityTypeMapping TypeName="RUDUSModel.cust">
+        <MappingFragment StoreEntitySet="cust">
+          <ScalarProperty Name="cust_code" ColumnName="cust_code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="sort_name" ColumnName="sort_name" />
+          <ScalarProperty Name="addr_title" ColumnName="addr_title" />
+          <ScalarProperty Name="addr_line_1" ColumnName="addr_line_1" />
+          <ScalarProperty Name="addr_line_2" ColumnName="addr_line_2" />
+          <ScalarProperty Name="addr_line_3" ColumnName="addr_line_3" />
+          <ScalarProperty Name="addr_city" ColumnName="addr_city" />
+          <ScalarProperty Name="addr_state" ColumnName="addr_state" />
+          <ScalarProperty Name="addr_cntry" ColumnName="addr_cntry" />
+          <ScalarProperty Name="addr_postcd" ColumnName="addr_postcd" />
+          <ScalarProperty Name="contct_name" ColumnName="contct_name" />
+          <ScalarProperty Name="phone_num_1" ColumnName="phone_num_1" />
+          <ScalarProperty Name="phone_num_2" ColumnName="phone_num_2" />
+          <ScalarProperty Name="phone_num_3" ColumnName="phone_num_3" />
+          <ScalarProperty Name="phone_num_4" ColumnName="phone_num_4" />
+          <ScalarProperty Name="setup_date" ColumnName="setup_date" />
+          <ScalarProperty Name="invc_name" ColumnName="invc_name" />
+          <ScalarProperty Name="invc_title" ColumnName="invc_title" />
+          <ScalarProperty Name="invc_contct_code" ColumnName="invc_contct_code" />
+          <ScalarProperty Name="invc_addr_line_1" ColumnName="invc_addr_line_1" />
+          <ScalarProperty Name="invc_addr_line_2" ColumnName="invc_addr_line_2" />
+          <ScalarProperty Name="invc_addr_line_3" ColumnName="invc_addr_line_3" />
+          <ScalarProperty Name="invc_city" ColumnName="invc_city" />
+          <ScalarProperty Name="invc_state" ColumnName="invc_state" />
+          <ScalarProperty Name="invc_cntry" ColumnName="invc_cntry" />
+          <ScalarProperty Name="invc_postcd" ColumnName="invc_postcd" />
+          <ScalarProperty Name="stmnt_name" ColumnName="stmnt_name" />
+          <ScalarProperty Name="stmnt_title" ColumnName="stmnt_title" />
+          <ScalarProperty Name="stmnt_addr_line_1" ColumnName="stmnt_addr_line_1" />
+          <ScalarProperty Name="stmnt_addr_line_2" ColumnName="stmnt_addr_line_2" />
+          <ScalarProperty Name="stmnt_addr_line_3" ColumnName="stmnt_addr_line_3" />
+          <ScalarProperty Name="stmnt_city" ColumnName="stmnt_city" />
+          <ScalarProperty Name="stmnt_state" ColumnName="stmnt_state" />
+          <ScalarProperty Name="stmnt_cntry" ColumnName="stmnt_cntry" />
+          <ScalarProperty Name="stmnt_postcd" ColumnName="stmnt_postcd" />
+          <ScalarProperty Name="tax_code" ColumnName="tax_code" />
+          <ScalarProperty Name="taxble_code" ColumnName="taxble_code" />
+          <ScalarProperty Name="non_tax_rsn_code" ColumnName="non_tax_rsn_code" />
+          <ScalarProperty Name="tax_id_code" ColumnName="tax_id_code" />
+          <ScalarProperty Name="allow_price_adjust_flag" ColumnName="allow_price_adjust_flag" />
+          <ScalarProperty Name="ar_type_code" ColumnName="ar_type_code" />
+          <ScalarProperty Name="stmnt_cycle_code" ColumnName="stmnt_cycle_code" />
+          <ScalarProperty Name="finc_chrg_flag" ColumnName="finc_chrg_flag" />
+          <ScalarProperty Name="print_stmnt_flag" ColumnName="print_stmnt_flag" />
+          <ScalarProperty Name="po_req_flag" ColumnName="po_req_flag" />
+          <ScalarProperty Name="cust_job_num_req_flag" ColumnName="cust_job_num_req_flag" />
+          <ScalarProperty Name="acct_cat_code" ColumnName="acct_cat_code" />
+          <ScalarProperty Name="cred_limtn_code" ColumnName="cred_limtn_code" />
+          <ScalarProperty Name="cred_card_name" ColumnName="cred_card_name" />
+          <ScalarProperty Name="cred_card_num" ColumnName="cred_card_num" />
+          <ScalarProperty Name="cred_card_expir_date" ColumnName="cred_card_expir_date" />
+          <ScalarProperty Name="cred_card_resp_name" ColumnName="cred_card_resp_name" />
+          <ScalarProperty Name="susp_rsn_code" ColumnName="susp_rsn_code" />
+          <ScalarProperty Name="invc_grouping_code" ColumnName="invc_grouping_code" />
+          <ScalarProperty Name="invc_sub_grouping_code" ColumnName="invc_sub_grouping_code" />
+          <ScalarProperty Name="invc_det_sum_code" ColumnName="invc_det_sum_code" />
+          <ScalarProperty Name="invc_single_mult_day_code" ColumnName="invc_single_mult_day_code" />
+          <ScalarProperty Name="invc_freq_code" ColumnName="invc_freq_code" />
+          <ScalarProperty Name="invc_copies" ColumnName="invc_copies" />
+          <ScalarProperty Name="invc_comb_haul_flag" ColumnName="invc_comb_haul_flag" />
+          <ScalarProperty Name="invc_show_min_haul_flag" ColumnName="invc_show_min_haul_flag" />
+          <ScalarProperty Name="invc_sep_by_prod_line_flag" ColumnName="invc_sep_by_prod_line_flag" />
+          <ScalarProperty Name="ca_track_order_color" ColumnName="ca_track_order_color" />
+          <ScalarProperty Name="cb_track_order_color" ColumnName="cb_track_order_color" />
+          <ScalarProperty Name="cc_track_order_color" ColumnName="cc_track_order_color" />
+          <ScalarProperty Name="cd_track_order_color" ColumnName="cd_track_order_color" />
+          <ScalarProperty Name="ca_print_mix_wgts_flag" ColumnName="ca_print_mix_wgts_flag" />
+          <ScalarProperty Name="cb_print_mix_wgts_flag" ColumnName="cb_print_mix_wgts_flag" />
+          <ScalarProperty Name="cc_print_mix_wgts_flag" ColumnName="cc_print_mix_wgts_flag" />
+          <ScalarProperty Name="cd_print_mix_wgts_flag" ColumnName="cd_print_mix_wgts_flag" />
+          <ScalarProperty Name="metric_cstmry_code" ColumnName="metric_cstmry_code" />
+          <ScalarProperty Name="intrnl_line_num" ColumnName="intrnl_line_num" />
+          <ScalarProperty Name="quote_flag" ColumnName="quote_flag" />
+          <ScalarProperty Name="lien_loc_req_code" ColumnName="lien_loc_req_code" />
+          <ScalarProperty Name="lien_exp_flag" ColumnName="lien_exp_flag" />
+          <ScalarProperty Name="ca_dflt_order_type" ColumnName="ca_dflt_order_type" />
+          <ScalarProperty Name="cb_dflt_order_type" ColumnName="cb_dflt_order_type" />
+          <ScalarProperty Name="cc_dflt_order_type" ColumnName="cc_dflt_order_type" />
+          <ScalarProperty Name="cd_dflt_order_type" ColumnName="cd_dflt_order_type" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+          <ScalarProperty Name="max_mins_early" ColumnName="max_mins_early" />
+          <ScalarProperty Name="max_mins_late" ColumnName="max_mins_late" />
+          <ScalarProperty Name="dataout_date" ColumnName="dataout_date" />
+          <ScalarProperty Name="modified_date" ColumnName="modified_date" />
+          <ScalarProperty Name="ca_user_order_type" ColumnName="ca_user_order_type" />
+          <ScalarProperty Name="cb_user_order_type" ColumnName="cb_user_order_type" />
+          <ScalarProperty Name="cc_user_order_type" ColumnName="cc_user_order_type" />
+          <ScalarProperty Name="cd_user_order_type" ColumnName="cd_user_order_type" />
+          <ScalarProperty Name="do_not_allow_edit_order_type" ColumnName="do_not_allow_edit_order_type" />
+          <ScalarProperty Name="third_party_company_flag" ColumnName="third_party_company_flag" />
+          <ScalarProperty Name="use_of_frame_proj_prod" ColumnName="use_of_frame_proj_prod" />
+          <ScalarProperty Name="bill_cust_code" ColumnName="bill_cust_code" />
+          <ScalarProperty Name="fiscal_regist_code" ColumnName="fiscal_regist_code" />
+          <ScalarProperty Name="price_plant_code" ColumnName="price_plant_code" />
+          <ScalarProperty Name="prim_slsmn_empl_code" ColumnName="prim_slsmn_empl_code" />
+          <ScalarProperty Name="restrict_proj_creation" ColumnName="restrict_proj_creation" />
+          <ScalarProperty Name="tax_id_code_2" ColumnName="tax_id_code_2" />
+          <ScalarProperty Name="inactive_date" ColumnName="inactive_date" />
+          <ScalarProperty Name="stmnt_contct_code" ColumnName="stmnt_contct_code" />
+          <ScalarProperty Name="inactive_code" ColumnName="inactive_code" />
+          <ScalarProperty Name="cust_class_code" ColumnName="cust_class_code" />
+          <ScalarProperty Name="invc_delv_meth" ColumnName="invc_delv_meth" />
+          <ScalarProperty Name="inter_company" ColumnName="inter_company" />
+          <ScalarProperty Name="guid" ColumnName="guid" />
+          <ScalarProperty Name="edx_synch_status_code" ColumnName="edx_synch_status_code" />
+          <ScalarProperty Name="override_items_invc_temp_flag" ColumnName="override_items_invc_temp_flag" />
+          <ScalarProperty Name="invc_show_sur_code" ColumnName="invc_show_sur_code" />
+          <ScalarProperty Name="is_internal_flag" ColumnName="is_internal_flag" />
+          <ScalarProperty Name="rep_comp_code" ColumnName="rep_comp_code" />
+          <ScalarProperty Name="third_party_credit_check" ColumnName="third_party_credit_check" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="u_version" ColumnName="u_version" />
+          <ScalarProperty Name="tax_exempt_id" ColumnName="tax_exempt_id" />
+          <ScalarProperty Name="user_defined" ColumnName="user_defined" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cuhs">
+      <EntityTypeMapping TypeName="RUDUSModel.cuh">
+        <MappingFragment StoreEntitySet="cuhs">
+          <ScalarProperty Name="u_version" ColumnName="u_version" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="tax_adj_count" ColumnName="tax_adj_count" />
+          <ScalarProperty Name="adj_count" ColumnName="adj_count" />
+          <ScalarProperty Name="disc_taken_count" ColumnName="disc_taken_count" />
+          <ScalarProperty Name="pmt_count_07" ColumnName="pmt_count_07" />
+          <ScalarProperty Name="pmt_count_06" ColumnName="pmt_count_06" />
+          <ScalarProperty Name="pmt_count_05" ColumnName="pmt_count_05" />
+          <ScalarProperty Name="pmt_count_04" ColumnName="pmt_count_04" />
+          <ScalarProperty Name="pmt_count_03" ColumnName="pmt_count_03" />
+          <ScalarProperty Name="pmt_count_02" ColumnName="pmt_count_02" />
+          <ScalarProperty Name="pmt_count_01" ColumnName="pmt_count_01" />
+          <ScalarProperty Name="debit_count" ColumnName="debit_count" />
+          <ScalarProperty Name="cred_count" ColumnName="cred_count" />
+          <ScalarProperty Name="finc_chrg_count" ColumnName="finc_chrg_count" />
+          <ScalarProperty Name="invc_count" ColumnName="invc_count" />
+          <ScalarProperty Name="aging_code_cat_07" ColumnName="aging_code_cat_07" />
+          <ScalarProperty Name="aging_code_cat_06" ColumnName="aging_code_cat_06" />
+          <ScalarProperty Name="aging_code_cat_05" ColumnName="aging_code_cat_05" />
+          <ScalarProperty Name="aging_code_cat_04" ColumnName="aging_code_cat_04" />
+          <ScalarProperty Name="aging_code_cat_03" ColumnName="aging_code_cat_03" />
+          <ScalarProperty Name="aging_code_cat_02" ColumnName="aging_code_cat_02" />
+          <ScalarProperty Name="aging_code_cat_01" ColumnName="aging_code_cat_01" />
+          <ScalarProperty Name="aging_amt_07" ColumnName="aging_amt_07" />
+          <ScalarProperty Name="aging_amt_06" ColumnName="aging_amt_06" />
+          <ScalarProperty Name="aging_amt_05" ColumnName="aging_amt_05" />
+          <ScalarProperty Name="aging_amt_04" ColumnName="aging_amt_04" />
+          <ScalarProperty Name="aging_amt_03" ColumnName="aging_amt_03" />
+          <ScalarProperty Name="aging_amt_02" ColumnName="aging_amt_02" />
+          <ScalarProperty Name="aging_amt_01" ColumnName="aging_amt_01" />
+          <ScalarProperty Name="bal_amt" ColumnName="bal_amt" />
+          <ScalarProperty Name="net_rev_amt" ColumnName="net_rev_amt" />
+          <ScalarProperty Name="tax_adj_amt" ColumnName="tax_adj_amt" />
+          <ScalarProperty Name="adj_amt" ColumnName="adj_amt" />
+          <ScalarProperty Name="disc_taken_amt" ColumnName="disc_taken_amt" />
+          <ScalarProperty Name="pmt_amt" ColumnName="pmt_amt" />
+          <ScalarProperty Name="tax_debit_amt" ColumnName="tax_debit_amt" />
+          <ScalarProperty Name="debit_amt" ColumnName="debit_amt" />
+          <ScalarProperty Name="tax_cred_amt" ColumnName="tax_cred_amt" />
+          <ScalarProperty Name="cred_amt" ColumnName="cred_amt" />
+          <ScalarProperty Name="finc_chrg_amt" ColumnName="finc_chrg_amt" />
+          <ScalarProperty Name="cost_amt" ColumnName="cost_amt" />
+          <ScalarProperty Name="tax_sales_amt" ColumnName="tax_sales_amt" />
+          <ScalarProperty Name="sales_amt" ColumnName="sales_amt" />
+          <ScalarProperty Name="sort_name" ColumnName="sort_name" />
+          <ScalarProperty Name="plant_code" ColumnName="plant_code" />
+          <ScalarProperty Name="comp_code" ColumnName="comp_code" />
+          <ScalarProperty Name="cust_code" ColumnName="cust_code" />
+          <ScalarProperty Name="acctng_perd" ColumnName="acctng_perd" />
+          <ScalarProperty Name="acctng_year" ColumnName="acctng_year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cnfas">
+      <EntityTypeMapping TypeName="RUDUSModel.cnfa">
+        <MappingFragment StoreEntitySet="cnfa">
+          <ScalarProperty Name="u_version" ColumnName="u_version" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="address_seq_code" ColumnName="address_seq_code" />
+          <ScalarProperty Name="pda_tkt_rem_rsn_code" ColumnName="pda_tkt_rem_rsn_code" />
+          <ScalarProperty Name="cap_cntry_flag" ColumnName="cap_cntry_flag" />
+          <ScalarProperty Name="cap_postcd_flag" ColumnName="cap_postcd_flag" />
+          <ScalarProperty Name="cap_state_flag" ColumnName="cap_state_flag" />
+          <ScalarProperty Name="cap_city_flag" ColumnName="cap_city_flag" />
+          <ScalarProperty Name="cap_addr_line_3_flag" ColumnName="cap_addr_line_3_flag" />
+          <ScalarProperty Name="cap_addr_line_2_flag" ColumnName="cap_addr_line_2_flag" />
+          <ScalarProperty Name="cap_addr_line_1_flag" ColumnName="cap_addr_line_1_flag" />
+          <ScalarProperty Name="postcd_rule" ColumnName="postcd_rule" />
+          <ScalarProperty Name="postcd_length" ColumnName="postcd_length" />
+          <ScalarProperty Name="postcd_format" ColumnName="postcd_format" />
+          <ScalarProperty Name="verify_postcd_flag" ColumnName="verify_postcd_flag" />
+          <ScalarProperty Name="verify_cntry_code_flag" ColumnName="verify_cntry_code_flag" />
+          <ScalarProperty Name="verify_state_code_flag" ColumnName="verify_state_code_flag" />
+          <ScalarProperty Name="req_tax_exempt_exp_date_flag" ColumnName="req_tax_exempt_exp_date_flag" />
+          <ScalarProperty Name="req_tax_exempt_id_flag" ColumnName="req_tax_exempt_id_flag" />
+          <ScalarProperty Name="req_acct_cat_flag" ColumnName="req_acct_cat_flag" />
+          <ScalarProperty Name="temp_dlto_susp_rsn_code" ColumnName="temp_dlto_susp_rsn_code" />
+          <ScalarProperty Name="dflt_temp_dlto_code" ColumnName="dflt_temp_dlto_code" />
+          <ScalarProperty Name="dflt_dlto_code" ColumnName="dflt_dlto_code" />
+          <ScalarProperty Name="next_temp_dlto_seq_code" ColumnName="next_temp_dlto_seq_code" />
+          <ScalarProperty Name="next_dlto_seq_code" ColumnName="next_dlto_seq_code" />
+          <ScalarProperty Name="sync_addr_code" ColumnName="sync_addr_code" />
+          <ScalarProperty Name="cash_disc_method" ColumnName="cash_disc_method" />
+          <ScalarProperty Name="template_cust_code" ColumnName="template_cust_code" />
+          <ScalarProperty Name="dflt_quick_cust_code" ColumnName="dflt_quick_cust_code" />
+          <ScalarProperty Name="next_quick_cust_seq" ColumnName="next_quick_cust_seq" />
+          <ScalarProperty Name="dflt_invc_comp_assign_code" ColumnName="dflt_invc_comp_assign_code" />
+          <ScalarProperty Name="cb_tkt_prod_limit" ColumnName="cb_tkt_prod_limit" />
+          <ScalarProperty Name="dflt_last_ordr_in_agg_tkt_code" ColumnName="dflt_last_ordr_in_agg_tkt_code" />
+          <ScalarProperty Name="dflt_invc_limit_value" ColumnName="dflt_invc_limit_value" />
+          <ScalarProperty Name="dflt_invc_limit_code" ColumnName="dflt_invc_limit_code" />
+          <ScalarProperty Name="next_cust_seq" ColumnName="next_cust_seq" />
+          <ScalarProperty Name="use_cust_comp_flag" ColumnName="use_cust_comp_flag" />
+          <ScalarProperty Name="key_field" ColumnName="key_field" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cusoes">
+      <EntityTypeMapping TypeName="RUDUSModel.cuso">
+        <MappingFragment StoreEntitySet="cuso">
+          <ScalarProperty Name="u_version" ColumnName="u_version" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="tax_exempt_profile_code" ColumnName="tax_exempt_profile_code" />
+          <ScalarProperty Name="bill_to_proj_code_req_flag" ColumnName="bill_to_proj_code_req_flag" />
+          <ScalarProperty Name="delv_meth_code" ColumnName="delv_meth_code" />
+          <ScalarProperty Name="invc_comp_code" ColumnName="invc_comp_code" />
+          <ScalarProperty Name="invc_comp_assign_code" ColumnName="invc_comp_assign_code" />
+          <ScalarProperty Name="invc_limit_value" ColumnName="invc_limit_value" />
+          <ScalarProperty Name="invc_limit_code" ColumnName="invc_limit_code" />
+          <ScalarProperty Name="prelien_date_calc_code" ColumnName="prelien_date_calc_code" />
+          <ScalarProperty Name="invc_proj_page_break_flag" ColumnName="invc_proj_page_break_flag" />
+          <ScalarProperty Name="cust_code" ColumnName="cust_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cucoes">
+      <EntityTypeMapping TypeName="RUDUSModel.cuco">
+        <MappingFragment StoreEntitySet="cuco">
+          <ScalarProperty Name="u_version" ColumnName="u_version" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="unposted_payment" ColumnName="unposted_payment" />
+          <ScalarProperty Name="edx_synch_status_code" ColumnName="edx_synch_status_code" />
+          <ScalarProperty Name="guid" ColumnName="guid" />
+          <ScalarProperty Name="stmnt_contct_code" ColumnName="stmnt_contct_code" />
+          <ScalarProperty Name="invc_contct_code" ColumnName="invc_contct_code" />
+          <ScalarProperty Name="disp_ar_balance_code" ColumnName="disp_ar_balance_code" />
+          <ScalarProperty Name="apply_zone_chrg_flag" ColumnName="apply_zone_chrg_flag" />
+          <ScalarProperty Name="dflt_master_proj_code" ColumnName="dflt_master_proj_code" />
+          <ScalarProperty Name="price_plant_code" ColumnName="price_plant_code" />
+          <ScalarProperty Name="prim_slsmn_empl_code" ColumnName="prim_slsmn_empl_code" />
+          <ScalarProperty Name="stmnt_postcd" ColumnName="stmnt_postcd" />
+          <ScalarProperty Name="stmnt_cntry" ColumnName="stmnt_cntry" />
+          <ScalarProperty Name="stmnt_state" ColumnName="stmnt_state" />
+          <ScalarProperty Name="stmnt_city" ColumnName="stmnt_city" />
+          <ScalarProperty Name="stmnt_addr_line_2" ColumnName="stmnt_addr_line_2" />
+          <ScalarProperty Name="stmnt_addr_line_1" ColumnName="stmnt_addr_line_1" />
+          <ScalarProperty Name="stmnt_name" ColumnName="stmnt_name" />
+          <ScalarProperty Name="invc_postcd" ColumnName="invc_postcd" />
+          <ScalarProperty Name="invc_cntry" ColumnName="invc_cntry" />
+          <ScalarProperty Name="invc_state" ColumnName="invc_state" />
+          <ScalarProperty Name="invc_city" ColumnName="invc_city" />
+          <ScalarProperty Name="invc_addr_line_2" ColumnName="invc_addr_line_2" />
+          <ScalarProperty Name="invc_addr_line_1" ColumnName="invc_addr_line_1" />
+          <ScalarProperty Name="invc_name" ColumnName="invc_name" />
+          <ScalarProperty Name="modified_date" ColumnName="modified_date" />
+          <ScalarProperty Name="perform_cred_update_flag" ColumnName="perform_cred_update_flag" />
+          <ScalarProperty Name="cred_update_date" ColumnName="cred_update_date" />
+          <ScalarProperty Name="shipped_orders_amt" ColumnName="shipped_orders_amt" />
+          <ScalarProperty Name="booked_orders_amt" ColumnName="booked_orders_amt" />
+          <ScalarProperty Name="avg_pmt_trans" ColumnName="avg_pmt_trans" />
+          <ScalarProperty Name="avg_pmt_days" ColumnName="avg_pmt_days" />
+          <ScalarProperty Name="ar_cred_empl_code" ColumnName="ar_cred_empl_code" />
+          <ScalarProperty Name="temp_cred_exp_date" ColumnName="temp_cred_exp_date" />
+          <ScalarProperty Name="temp_cred_limit_amt" ColumnName="temp_cred_limit_amt" />
+          <ScalarProperty Name="cred_limit_amt" ColumnName="cred_limit_amt" />
+          <ScalarProperty Name="prev_cred_code" ColumnName="prev_cred_code" />
+          <ScalarProperty Name="cred_chng_date" ColumnName="cred_chng_date" />
+          <ScalarProperty Name="cred_code" ColumnName="cred_code" />
+          <ScalarProperty Name="high_bal_date" ColumnName="high_bal_date" />
+          <ScalarProperty Name="high_bal_amt" ColumnName="high_bal_amt" />
+          <ScalarProperty Name="curr_ret_amt" ColumnName="curr_ret_amt" />
+          <ScalarProperty Name="curr_bal_amt" ColumnName="curr_bal_amt" />
+          <ScalarProperty Name="last_check_date" ColumnName="last_check_date" />
+          <ScalarProperty Name="last_check_amt" ColumnName="last_check_amt" />
+          <ScalarProperty Name="last_invc_date" ColumnName="last_invc_date" />
+          <ScalarProperty Name="last_invc_amt" ColumnName="last_invc_amt" />
+          <ScalarProperty Name="last_stmnt_date" ColumnName="last_stmnt_date" />
+          <ScalarProperty Name="last_stmnt_amt" ColumnName="last_stmnt_amt" />
+          <ScalarProperty Name="sort_name" ColumnName="sort_name" />
+          <ScalarProperty Name="comp_code" ColumnName="comp_code" />
+          <ScalarProperty Name="cust_code" ColumnName="cust_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cuigs">
+      <EntityTypeMapping TypeName="RUDUSModel.cuig">
+        <MappingFragment StoreEntitySet="cuig">
+          <ScalarProperty Name="sur_dflt_action_codes" ColumnName="sur_dflt_action_codes" />
+          <ScalarProperty Name="sundry_chrg_sep_invc_flags" ColumnName="sundry_chrg_sep_invc_flags" />
+          <ScalarProperty Name="sundry_chrg_table_ids" ColumnName="sundry_chrg_table_ids" />
+          <ScalarProperty Name="order_sur_rates" ColumnName="order_sur_rates" />
+          <ScalarProperty Name="order_sur_codes" ColumnName="order_sur_codes" />
+          <ScalarProperty Name="u_version" ColumnName="u_version" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="apply_sundry_chrg_flag" ColumnName="apply_sundry_chrg_flag" />
+          <ScalarProperty Name="apply_season_chrg_flag" ColumnName="apply_season_chrg_flag" />
+          <ScalarProperty Name="apply_excess_unld_chrg_flag" ColumnName="apply_excess_unld_chrg_flag" />
+          <ScalarProperty Name="po_restrict_warn_code" ColumnName="po_restrict_warn_code" />
+          <ScalarProperty Name="po_restrict_code" ColumnName="po_restrict_code" />
+          <ScalarProperty Name="po_req_code" ColumnName="po_req_code" />
+          <ScalarProperty Name="force_price_uom_flag" ColumnName="force_price_uom_flag" />
+          <ScalarProperty Name="apply_sur_rate_hler_flag" ColumnName="apply_sur_rate_hler_flag" />
+          <ScalarProperty Name="apply_cart_rate_hler_flag" ColumnName="apply_cart_rate_hler_flag" />
+          <ScalarProperty Name="allow_price_chng_flag" ColumnName="allow_price_chng_flag" />
+          <ScalarProperty Name="restrict_quoted_prod_flag" ColumnName="restrict_quoted_prod_flag" />
+          <ScalarProperty Name="print_tkt_prices_flag" ColumnName="print_tkt_prices_flag" />
+          <ScalarProperty Name="prev_cart_rate" ColumnName="prev_cart_rate" />
+          <ScalarProperty Name="cart_rate_effect_date" ColumnName="cart_rate_effect_date" />
+          <ScalarProperty Name="cart_rate" ColumnName="cart_rate" />
+          <ScalarProperty Name="cart_code" ColumnName="cart_code" />
+          <ScalarProperty Name="price_plant_code" ColumnName="price_plant_code" />
+          <ScalarProperty Name="price_cat" ColumnName="price_cat" />
+          <ScalarProperty Name="trade_disc_pct" ColumnName="trade_disc_pct" />
+          <ScalarProperty Name="trade_disc_amt_uom" ColumnName="trade_disc_amt_uom" />
+          <ScalarProperty Name="trade_disc_amt" ColumnName="trade_disc_amt" />
+          <ScalarProperty Name="terms_code" ColumnName="terms_code" />
+          <ScalarProperty Name="slsmn_empl_code" ColumnName="slsmn_empl_code" />
+          <ScalarProperty Name="sales_anl_code" ColumnName="sales_anl_code" />
+          <ScalarProperty Name="auto_sundry_sep_invc_flag" ColumnName="auto_sundry_sep_invc_flag" />
+          <ScalarProperty Name="apply_zone_charge_flag" ColumnName="apply_zone_charge_flag" />
+          <ScalarProperty Name="zone_code" ColumnName="zone_code" />
+          <ScalarProperty Name="season_sep_invc_flag" ColumnName="season_sep_invc_flag" />
+          <ScalarProperty Name="season_chrg_table_id" ColumnName="season_chrg_table_id" />
+          <ScalarProperty Name="apply_min_load_chrg_flag" ColumnName="apply_min_load_chrg_flag" />
+          <ScalarProperty Name="min_load_sep_invc_flag" ColumnName="min_load_sep_invc_flag" />
+          <ScalarProperty Name="min_load_chrg_table_id" ColumnName="min_load_chrg_table_id" />
+          <ScalarProperty Name="apply_min_haul_pay_flag" ColumnName="apply_min_haul_pay_flag" />
+          <ScalarProperty Name="apply_min_haul_flag" ColumnName="apply_min_haul_flag" />
+          <ScalarProperty Name="hler_code" ColumnName="hler_code" />
+          <ScalarProperty Name="item_group_id" ColumnName="item_group_id" />
+          <ScalarProperty Name="cust_code" ColumnName="cust_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cuius">
+      <EntityTypeMapping TypeName="RUDUSModel.cuiu">
+        <MappingFragment StoreEntitySet="cuiu">
+          <ScalarProperty Name="u_version" ColumnName="u_version" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="unld_chrg_sep_invc_flag" ColumnName="unld_chrg_sep_invc_flag" />
+          <ScalarProperty Name="unld_chrg_table_id" ColumnName="unld_chrg_table_id" />
+          <ScalarProperty Name="item_group_id" ColumnName="item_group_id" />
+          <ScalarProperty Name="cust_code" ColumnName="cust_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

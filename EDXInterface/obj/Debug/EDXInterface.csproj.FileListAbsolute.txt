@@ -1,0 +1,5 @@
+J:\visual studio projects\CustomerDemo\EDXInterface\obj\Debug\ResolveAssemblyReference.cache
+J:\visual studio projects\CustomerDemo\EDXInterface\bin\Debug\EDXInterface.dll
+J:\visual studio projects\CustomerDemo\EDXInterface\bin\Debug\EDXInterface.pdb
+J:\visual studio projects\CustomerDemo\EDXInterface\obj\Debug\EDXInterface.dll
+J:\visual studio projects\CustomerDemo\EDXInterface\obj\Debug\EDXInterface.pdb

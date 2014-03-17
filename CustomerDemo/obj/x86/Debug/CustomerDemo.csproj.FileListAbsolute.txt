@@ -1,0 +1,14 @@
+J:\visual studio projects\CustomerDemo\CustomerDemo\bin\Debug\CustomerDemo.exe
+J:\visual studio projects\CustomerDemo\CustomerDemo\bin\Debug\CustomerDemo.pdb
+J:\visual studio projects\CustomerDemo\CustomerDemo\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\visual studio projects\CustomerDemo\CustomerDemo\obj\x86\Debug\CustomerDemo.Form1.resources
+J:\visual studio projects\CustomerDemo\CustomerDemo\obj\x86\Debug\CustomerDemo.Properties.Resources.resources
+J:\visual studio projects\CustomerDemo\CustomerDemo\obj\x86\Debug\GenerateResource.read.1.tlog
+J:\visual studio projects\CustomerDemo\CustomerDemo\obj\x86\Debug\GenerateResource.write.1.tlog
+J:\visual studio projects\CustomerDemo\CustomerDemo\obj\x86\Debug\CustomerDemo.exe
+J:\visual studio projects\CustomerDemo\CustomerDemo\obj\x86\Debug\CustomerDemo.pdb
+J:\visual studio projects\CustomerDemo\CustomerDemo\bin\Debug\CustomerDataLayer.dll
+J:\visual studio projects\CustomerDemo\CustomerDemo\bin\Debug\CustomerDataLayer.pdb
+J:\visual studio projects\CustomerDemo\CustomerDemo\bin\Debug\EDXInterface.dll
+J:\visual studio projects\CustomerDemo\CustomerDemo\bin\Debug\EDXInterface.pdb
+J:\visual studio projects\CustomerDemo\CustomerDemo\bin\Debug\CustomerDemo.exe.config

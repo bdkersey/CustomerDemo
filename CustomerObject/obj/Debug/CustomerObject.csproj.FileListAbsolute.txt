@@ -1,0 +1,9 @@
+J:\visual studio projects\CustomerDemo\CustomerObject\bin\Debug\CustomerObject.dll
+J:\visual studio projects\CustomerDemo\CustomerObject\bin\Debug\CustomerObject.pdb
+J:\visual studio projects\CustomerDemo\CustomerObject\bin\Debug\CustomerDataLayer.dll
+J:\visual studio projects\CustomerDemo\CustomerObject\bin\Debug\CustomerDataLayer.pdb
+J:\visual studio projects\CustomerDemo\CustomerObject\obj\Debug\ResolveAssemblyReference.cache
+J:\visual studio projects\CustomerDemo\CustomerObject\obj\Debug\CustomerObject.dll
+J:\visual studio projects\CustomerDemo\CustomerObject\obj\Debug\CustomerObject.pdb
+J:\visual studio projects\CustomerDemo\CustomerObject\bin\Debug\EDXInterface.dll
+J:\visual studio projects\CustomerDemo\CustomerObject\bin\Debug\EDXInterface.pdb

@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RUDUSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="RUDUSModelStoreContainer">
+    <EntitySet Name="ccon" EntityType="RUDUSModel.Store.ccon" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cnfa" EntityType="RUDUSModel.Store.cnfa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="csdt" EntityType="RUDUSModel.Store.csdt" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cuco" EntityType="RUDUSModel.Store.cuco" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cuhs" EntityType="RUDUSModel.Store.cuhs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cuig" EntityType="RUDUSModel.Store.cuig" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cuiu" EntityType="RUDUSModel.Store.cuiu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cusc" EntityType="RUDUSModel.Store.cusc" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cuso" EntityType="RUDUSModel.Store.cuso" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cust" EntityType="RUDUSModel.Store.cust" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="ccon">
+    <Key>
+      <PropertyRef Name="cust_code" />
+      <PropertyRef Name="contct_code" />
+      <PropertyRef Name="unique_num" />
+    </Key>
+    <Property Name="cust_code" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="contct_code" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="unique_num" Type="numeric" Nullable="false" Precision="12" />
+    <Property Name="contct_type" Type="char" MaxLength="2" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="u_version" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cnfa">
+    <Key>
+      <PropertyRef Name="key_field" />
+    </Key>
+    <Property Name="key_field" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="use_cust_comp_flag" Type="bit" />
+    <Property Name="next_cust_seq" Type="char" MaxLength="3" />
+    <Property Name="dflt_invc_limit_code" Type="char" MaxLength="1" />
+    <Property Name="dflt_invc_limit_value" Type="numeric" Precision="6" />
+    <Property Name="dflt_last_ordr_in_agg_tkt_code" Type="char" MaxLength="2" />
+    <Property Name="cb_tkt_prod_limit" Type="char" MaxLength="3" />
+    <Property Name="dflt_invc_comp_assign_code" Type="char" MaxLength="1" />
+    <Property Name="next_quick_cust_seq" Type="char" MaxLength="3" />
+    <Property Name="dflt_quick_cust_code" Type="char" MaxLength="10" />
+    <Property Name="template_cust_code" Type="char" MaxLength="10" />
+    <Property Name="cash_disc_method" Type="char" MaxLength="2" />
+    <Property Name="sync_addr_code" Type="char" MaxLength="2" />
+    <Property Name="next_dlto_seq_code" Type="char" MaxLength="3" />
+    <Property Name="next_temp_dlto_seq_code" Type="char" MaxLength="3" />
+    <Property Name="dflt_dlto_code" Type="char" MaxLength="12" />
+    <Property Name="dflt_temp_dlto_code" Type="char" MaxLength="12" />
+    <Property Name="temp_dlto_susp_rsn_code" Type="char" MaxLength="3" />
+    <Property Name="req_acct_cat_flag" Type="bit" />
+    <Property Name="req_tax_exempt_id_flag" Type="bit" />
+    <Property Name="req_tax_exempt_exp_date_flag" Type="bit" />
+    <Property Name="verify_state_code_flag" Type="bit" />
+    <Property Name="verify_cntry_code_flag" Type="bit" />
+    <Property Name="verify_postcd_flag" Type="bit" />
+    <Property Name="postcd_format" Type="char" MaxLength="2" />
+    <Property Name="postcd_length" Type="numeric" Precision="4" />
+    <Property Name="postcd_rule" Type="char" MaxLength="2" />
+    <Property Name="cap_addr_line_1_flag" Type="bit" />
+    <Property Name="cap_addr_line_2_flag" Type="bit" />
+    <Property Name="cap_addr_line_3_flag" Type="bit" />
+    <Property Name="cap_city_flag" Type="bit" />
+    <Property Name="cap_state_flag" Type="bit" />
+    <Property Name="cap_postcd_flag" Type="bit" />
+    <Property Name="cap_cntry_flag" Type="bit" />
+    <Property Name="pda_tkt_rem_rsn_code" Type="char" MaxLength="3" />
+    <Property Name="address_seq_code" Type="char" MaxLength="2" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="u_version" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="csdt">
+    <Key>
+      <PropertyRef Name="cust_code" />
+      <PropertyRef Name="deliver_to_code" />
+    </Key>
+    <Property Name="cust_code" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="deliver_to_code" Type="char" Nullable="false" MaxLength="12" />
+    <Property Name="interfaced_manual" Type="numeric" Precision="2" />
+    <Property Name="user_name" Type="char" MaxLength="20" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="u_version" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cuco">
+    <Key>
+      <PropertyRef Name="cust_code" />
+      <PropertyRef Name="comp_code" />
+    </Key>
+    <Property Name="cust_code" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="comp_code" Type="char" Nullable="false" MaxLength="4" />
+    <Property Name="sort_name" Type="char" MaxLength="8" />
+    <Property Name="last_stmnt_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="last_stmnt_date" Type="datetime" />
+    <Property Name="last_invc_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="last_invc_date" Type="datetime" />
+    <Property Name="last_check_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="last_check_date" Type="datetime" />
+    <Property Name="curr_bal_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="curr_ret_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="high_bal_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="high_bal_date" Type="datetime" />
+    <Property Name="cred_code" Type="char" MaxLength="3" />
+    <Property Name="cred_chng_date" Type="datetime" />
+    <Property Name="prev_cred_code" Type="char" MaxLength="3" />
+    <Property Name="cred_limit_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="temp_cred_limit_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="temp_cred_exp_date" Type="datetime" />
+    <Property Name="ar_cred_empl_code" Type="char" MaxLength="12" />
+    <Property Name="avg_pmt_days" Type="numeric" Precision="8" />
+    <Property Name="avg_pmt_trans" Type="numeric" Precision="8" />
+    <Property Name="booked_orders_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="shipped_orders_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="cred_update_date" Type="datetime" />
+    <Property Name="perform_cred_update_flag" Type="bit" />
+    <Property Name="modified_date" Type="datetime" />
+    <Property Name="invc_name" Type="char" MaxLength="40" />
+    <Property Name="invc_addr_line_1" Type="char" MaxLength="40" />
+    <Property Name="invc_addr_line_2" Type="char" MaxLength="40" />
+    <Property Name="invc_city" Type="char" MaxLength="40" />
+    <Property Name="invc_state" Type="char" MaxLength="30" />
+    <Property Name="invc_cntry" Type="char" MaxLength="3" />
+    <Property Name="invc_postcd" Type="char" MaxLength="10" />
+    <Property Name="stmnt_name" Type="char" MaxLength="40" />
+    <Property Name="stmnt_addr_line_1" Type="char" MaxLength="40" />
+    <Property Name="stmnt_addr_line_2" Type="char" MaxLength="40" />
+    <Property Name="stmnt_city" Type="char" MaxLength="40" />
+    <Property Name="stmnt_state" Type="char" MaxLength="30" />
+    <Property Name="stmnt_cntry" Type="char" MaxLength="3" />
+    <Property Name="stmnt_postcd" Type="char" MaxLength="10" />
+    <Property Name="prim_slsmn_empl_code" Type="char" MaxLength="12" />
+    <Property Name="price_plant_code" Type="char" MaxLength="3" />
+    <Property Name="dflt_master_proj_code" Type="char" MaxLength="12" />
+    <Property Name="apply_zone_chrg_flag" Type="bit" />
+    <Property Name="disp_ar_balance_code" Type="char" MaxLength="2" />
+    <Property Name="invc_contct_code" Type="char" MaxLength="8" />
+    <Property Name="stmnt_contct_code" Type="char" MaxLength="8" />
+    <Property Name="guid" Type="char" MaxLength="36" />
+    <Property Name="edx_synch_status_code" Type="char" MaxLength="1" />
+    <Property Name="unposted_payment" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="u_version" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cuhs">
+    <Key>
+      <PropertyRef Name="acctng_year" />
+      <PropertyRef Name="acctng_perd" />
+      <PropertyRef Name="cust_code" />
+      <PropertyRef Name="comp_code" />
+      <PropertyRef Name="plant_code" />
+    </Key>
+    <Property Name="acctng_year" Type="numeric" Nullable="false" Precision="4" />
+    <Property Name="acctng_perd" Type="numeric" Nullable="false" Precision="2" />
+    <Property Name="cust_code" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="comp_code" Type="char" Nullable="false" MaxLength="4" />
+    <Property Name="plant_code" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="sort_name" Type="char" MaxLength="8" />
+    <Property Name="sales_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="tax_sales_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="cost_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="finc_chrg_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="cred_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="tax_cred_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="debit_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="tax_debit_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="pmt_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="disc_taken_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="adj_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="tax_adj_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="net_rev_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="bal_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="aging_amt_01" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="aging_amt_02" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="aging_amt_03" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="aging_amt_04" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="aging_amt_05" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="aging_amt_06" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="aging_amt_07" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="aging_code_cat_01" Type="char" MaxLength="2" />
+    <Property Name="aging_code_cat_02" Type="char" MaxLength="2" />
+    <Property Name="aging_code_cat_03" Type="char" MaxLength="2" />
+    <Property Name="aging_code_cat_04" Type="char" MaxLength="2" />
+    <Property Name="aging_code_cat_05" Type="char" MaxLength="2" />
+    <Property Name="aging_code_cat_06" Type="char" MaxLength="2" />
+    <Property Name="aging_code_cat_07" Type="char" MaxLength="2" />
+    <Property Name="invc_count" Type="numeric" Precision="5" />
+    <Property Name="finc_chrg_count" Type="numeric" Precision="5" />
+    <Property Name="cred_count" Type="numeric" Precision="5" />
+    <Property Name="debit_count" Type="numeric" Precision="5" />
+    <Property Name="pmt_count_01" Type="numeric" Precision="5" />
+    <Property Name="pmt_count_02" Type="numeric" Precision="5" />
+    <Property Name="pmt_count_03" Type="numeric" Precision="5" />
+    <Property Name="pmt_count_04" Type="numeric" Precision="5" />
+    <Property Name="pmt_count_05" Type="numeric" Precision="5" />
+    <Property Name="pmt_count_06" Type="numeric" Precision="5" />
+    <Property Name="pmt_count_07" Type="numeric" Precision="5" />
+    <Property Name="disc_taken_count" Type="numeric" Precision="5" />
+    <Property Name="adj_count" Type="numeric" Precision="5" />
+    <Property Name="tax_adj_count" Type="numeric" Precision="5" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="u_version" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cuig">
+    <Key>
+      <PropertyRef Name="cust_code" />
+      <PropertyRef Name="item_group_id" />
+    </Key>
+    <Property Name="cust_code" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="item_group_id" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="hler_code" Type="char" MaxLength="8" />
+    <Property Name="apply_min_haul_flag" Type="bit" />
+    <Property Name="apply_min_haul_pay_flag" Type="bit" />
+    <Property Name="min_load_chrg_table_id" Type="char" MaxLength="3" />
+    <Property Name="min_load_sep_invc_flag" Type="bit" />
+    <Property Name="apply_min_load_chrg_flag" Type="bit" />
+    <Property Name="season_chrg_table_id" Type="char" MaxLength="3" />
+    <Property Name="season_sep_invc_flag" Type="bit" />
+    <Property Name="zone_code" Type="char" MaxLength="8" />
+    <Property Name="apply_zone_charge_flag" Type="bit" />
+    <Property Name="auto_sundry_sep_invc_flag" Type="bit" />
+    <Property Name="sales_anl_code" Type="char" MaxLength="3" />
+    <Property Name="slsmn_empl_code" Type="char" MaxLength="12" />
+    <Property Name="terms_code" Type="char" MaxLength="3" />
+    <Property Name="trade_disc_amt" Type="numeric" Precision="17" Scale="2" />
+    <Property Name="trade_disc_amt_uom" Type="char" MaxLength="5" />
+    <Property Name="trade_disc_pct" Type="numeric" Precision="7" Scale="3" />
+    <Property Name="price_cat" Type="char" MaxLength="3" />
+    <Property Name="price_plant_code" Type="char" MaxLength="3" />
+    <Property Name="cart_code" Type="char" MaxLength="3" />
+    <Property Name="cart_rate" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="cart_rate_effect_date" Type="datetime" />
+    <Property Name="prev_cart_rate" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="print_tkt_prices_flag" Type="bit" />
+    <Property Name="restrict_quoted_prod_flag" Type="bit" />
+    <Property Name="allow_price_chng_flag" Type="bit" />
+    <Property Name="apply_cart_rate_hler_flag" Type="bit" />
+    <Property Name="apply_sur_rate_hler_flag" Type="bit" />
+    <Property Name="force_price_uom_flag" Type="bit" />
+    <Property Name="po_req_code" Type="char" MaxLength="2" />
+    <Property Name="po_restrict_code" Type="char" MaxLength="2" />
+    <Property Name="po_restrict_warn_code" Type="char" MaxLength="2" />
+    <Property Name="apply_excess_unld_chrg_flag" Type="bit" />
+    <Property Name="apply_season_chrg_flag" Type="bit" />
+    <Property Name="apply_sundry_chrg_flag" Type="bit" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="u_version" Type="char" MaxLength="1" />
+    <Property Name="order_sur_codes" Type="text" />
+    <Property Name="order_sur_rates" Type="text" />
+    <Property Name="sundry_chrg_table_ids" Type="text" />
+    <Property Name="sundry_chrg_sep_invc_flags" Type="text" />
+    <Property Name="sur_dflt_action_codes" Type="text" />
+  </EntityType>
+  <EntityType Name="cuiu">
+    <Key>
+      <PropertyRef Name="cust_code" />
+      <PropertyRef Name="item_group_id" />
+      <PropertyRef Name="unld_chrg_table_id" />
+    </Key>
+    <Property Name="cust_code" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="item_group_id" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="unld_chrg_table_id" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="unld_chrg_sep_invc_flag" Type="bit" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="u_version" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cusc">
+    <Key>
+      <PropertyRef Name="cust_code" />
+      <PropertyRef Name="intrnl_line_num" />
+      <PropertyRef Name="prod_line_code" />
+      <PropertyRef Name="sundry_chrg_table_id" />
+    </Key>
+    <Property Name="cust_code" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="intrnl_line_num" Type="numeric" Nullable="false" Precision="4" />
+    <Property Name="prod_line_code" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="sundry_chrg_table_id" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="sort_line_num" Type="numeric" Precision="4" />
+    <Property Name="item_code" Type="char" MaxLength="12" />
+    <Property Name="price" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="price_uom" Type="char" MaxLength="5" />
+    <Property Name="price_ext_code" Type="char" MaxLength="1" />
+    <Property Name="effect_date" Type="datetime" />
+    <Property Name="prev_price" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="prev_price_ext_code" Type="char" MaxLength="1" />
+    <Property Name="sep_invc_flag" Type="bit" />
+    <Property Name="modified_date" Type="datetime" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="u_version" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cuso">
+    <Key>
+      <PropertyRef Name="cust_code" />
+    </Key>
+    <Property Name="cust_code" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="invc_proj_page_break_flag" Type="bit" />
+    <Property Name="prelien_date_calc_code" Type="char" MaxLength="1" />
+    <Property Name="invc_limit_code" Type="char" MaxLength="1" />
+    <Property Name="invc_limit_value" Type="numeric" Precision="6" />
+    <Property Name="invc_comp_assign_code" Type="char" MaxLength="1" />
+    <Property Name="invc_comp_code" Type="char" MaxLength="4" />
+    <Property Name="delv_meth_code" Type="char" MaxLength="2" />
+    <Property Name="bill_to_proj_code_req_flag" Type="bit" />
+    <Property Name="tax_exempt_profile_code" Type="char" MaxLength="3" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="u_version" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cust">
+    <Key>
+      <PropertyRef Name="cust_code" />
+    </Key>
+    <Property Name="cust_code" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="name" Type="char" MaxLength="40" />
+    <Property Name="sort_name" Type="char" MaxLength="8" />
+    <Property Name="addr_title" Type="char" MaxLength="40" />
+    <Property Name="addr_line_1" Type="char" MaxLength="40" />
+    <Property Name="addr_line_2" Type="char" MaxLength="40" />
+    <Property Name="addr_line_3" Type="char" MaxLength="40" />
+    <Property Name="addr_city" Type="char" MaxLength="40" />
+    <Property Name="addr_state" Type="char" MaxLength="30" />
+    <Property Name="addr_cntry" Type="char" MaxLength="3" />
+    <Property Name="addr_postcd" Type="char" MaxLength="10" />
+    <Property Name="contct_name" Type="char" MaxLength="40" />
+    <Property Name="phone_num_1" Type="char" MaxLength="14" />
+    <Property Name="phone_num_2" Type="char" MaxLength="14" />
+    <Property Name="phone_num_3" Type="char" MaxLength="14" />
+    <Property Name="phone_num_4" Type="char" MaxLength="14" />
+    <Property Name="setup_date" Type="datetime" />
+    <Property Name="invc_name" Type="char" MaxLength="40" />
+    <Property Name="invc_title" Type="char" MaxLength="40" />
+    <Property Name="invc_contct_code" Type="char" MaxLength="8" />
+    <Property Name="invc_addr_line_1" Type="char" MaxLength="40" />
+    <Property Name="invc_addr_line_2" Type="char" MaxLength="40" />
+    <Property Name="invc_addr_line_3" Type="char" MaxLength="40" />
+    <Property Name="invc_city" Type="char" MaxLength="40" />
+    <Property Name="invc_state" Type="char" MaxLength="30" />
+    <Property Name="invc_cntry" Type="char" MaxLength="3" />
+    <Property Name="invc_postcd" Type="char" MaxLength="10" />
+    <Property Name="stmnt_name" Type="char" MaxLength="40" />
+    <Property Name="stmnt_title" Type="char" MaxLength="40" />
+    <Property Name="stmnt_addr_line_1" Type="char" MaxLength="40" />
+    <Property Name="stmnt_addr_line_2" Type="char" MaxLength="40" />
+    <Property Name="stmnt_addr_line_3" Type="char" MaxLength="40" />
+    <Property Name="stmnt_city" Type="char" MaxLength="40" />
+    <Property Name="stmnt_state" Type="char" MaxLength="30" />
+    <Property Name="stmnt_cntry" Type="char" MaxLength="3" />
+    <Property Name="stmnt_postcd" Type="char" MaxLength="10" />
+    <Property Name="tax_code" Type="char" MaxLength="3" />
+    <Property Name="taxble_code" Type="numeric" Precision="1" />
+    <Property Name="non_tax_rsn_code" Type="char" MaxLength="3" />
+    <Property Name="tax_id_code" Type="char" MaxLength="20" />
+    <Property Name="allow_price_adjust_flag" Type="bit" />
+    <Property Name="ar_type_code" Type="char" MaxLength="1" />
+    <Property Name="stmnt_cycle_code" Type="char" MaxLength="1" />
+    <Property Name="finc_chrg_flag" Type="bit" />
+    <Property Name="print_stmnt_flag" Type="bit" />
+    <Property Name="po_req_flag" Type="bit" />
+    <Property Name="cust_job_num_req_flag" Type="bit" />
+    <Property Name="acct_cat_code" Type="char" MaxLength="4" />
+    <Property Name="cred_limtn_code" Type="char" MaxLength="3" />
+    <Property Name="cred_card_name" Type="char" MaxLength="40" />
+    <Property Name="cred_card_num" Type="char" MaxLength="30" />
+    <Property Name="cred_card_expir_date" Type="datetime" />
+    <Property Name="cred_card_resp_name" Type="char" MaxLength="40" />
+    <Property Name="susp_rsn_code" Type="char" MaxLength="3" />
+    <Property Name="invc_grouping_code" Type="char" MaxLength="2" />
+    <Property Name="invc_sub_grouping_code" Type="char" MaxLength="1" />
+    <Property Name="invc_det_sum_code" Type="char" MaxLength="1" />
+    <Property Name="invc_single_mult_day_code" Type="char" MaxLength="1" />
+    <Property Name="invc_freq_code" Type="char" MaxLength="1" />
+    <Property Name="invc_copies" Type="numeric" Precision="2" />
+    <Property Name="invc_comb_haul_flag" Type="bit" />
+    <Property Name="invc_show_min_haul_flag" Type="bit" />
+    <Property Name="invc_sep_by_prod_line_flag" Type="bit" />
+    <Property Name="ca_track_order_color" Type="numeric" Precision="2" />
+    <Property Name="cb_track_order_color" Type="numeric" Precision="2" />
+    <Property Name="cc_track_order_color" Type="numeric" Precision="2" />
+    <Property Name="cd_track_order_color" Type="numeric" Precision="2" />
+    <Property Name="ca_print_mix_wgts_flag" Type="bit" />
+    <Property Name="cb_print_mix_wgts_flag" Type="bit" />
+    <Property Name="cc_print_mix_wgts_flag" Type="bit" />
+    <Property Name="cd_print_mix_wgts_flag" Type="bit" />
+    <Property Name="metric_cstmry_code" Type="char" MaxLength="1" />
+    <Property Name="intrnl_line_num" Type="numeric" Precision="4" />
+    <Property Name="quote_flag" Type="bit" />
+    <Property Name="lien_loc_req_code" Type="char" MaxLength="1" />
+    <Property Name="lien_exp_flag" Type="bit" />
+    <Property Name="ca_dflt_order_type" Type="char" MaxLength="2" />
+    <Property Name="cb_dflt_order_type" Type="char" MaxLength="2" />
+    <Property Name="cc_dflt_order_type" Type="char" MaxLength="2" />
+    <Property Name="cd_dflt_order_type" Type="char" MaxLength="2" />
+    <Property Name="priority" Type="numeric" Precision="4" />
+    <Property Name="max_mins_early" Type="numeric" Precision="4" />
+    <Property Name="max_mins_late" Type="numeric" Precision="4" />
+    <Property Name="dataout_date" Type="datetime" />
+    <Property Name="modified_date" Type="datetime" />
+    <Property Name="ca_user_order_type" Type="char" MaxLength="2" />
+    <Property Name="cb_user_order_type" Type="char" MaxLength="2" />
+    <Property Name="cc_user_order_type" Type="char" MaxLength="2" />
+    <Property Name="cd_user_order_type" Type="char" MaxLength="2" />
+    <Property Name="do_not_allow_edit_order_type" Type="bit" />
+    <Property Name="third_party_company_flag" Type="bit" />
+    <Property Name="use_of_frame_proj_prod" Type="char" MaxLength="2" />
+    <Property Name="bill_cust_code" Type="char" MaxLength="10" />
+    <Property Name="fiscal_regist_code" Type="char" MaxLength="20" />
+    <Property Name="price_plant_code" Type="char" MaxLength="3" />
+    <Property Name="prim_slsmn_empl_code" Type="char" MaxLength="12" />
+    <Property Name="restrict_proj_creation" Type="bit" />
+    <Property Name="tax_id_code_2" Type="char" MaxLength="20" />
+    <Property Name="inactive_date" Type="datetime" />
+    <Property Name="stmnt_contct_code" Type="char" MaxLength="8" />
+    <Property Name="inactive_code" Type="char" MaxLength="2" />
+    <Property Name="cust_class_code" Type="char" MaxLength="3" />
+    <Property Name="invc_delv_meth" Type="char" MaxLength="2" />
+    <Property Name="inter_company" Type="char" MaxLength="2" />
+    <Property Name="guid" Type="char" MaxLength="36" />
+    <Property Name="edx_synch_status_code" Type="char" MaxLength="1" />
+    <Property Name="override_items_invc_temp_flag" Type="bit" />
+    <Property Name="invc_show_sur_code" Type="char" MaxLength="2" />
+    <Property Name="is_internal_flag" Type="bit" />
+    <Property Name="rep_comp_code" Type="char" MaxLength="4" />
+    <Property Name="third_party_credit_check" Type="bit" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="u_version" Type="char" MaxLength="1" />
+    <Property Name="tax_exempt_id" Type="text" />
+    <Property Name="user_defined" Type="text" />
+  </EntityType>
+</Schema>

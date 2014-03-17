@@ -1,0 +1,6 @@
+J:\visual studio projects\CustomerDemo\CustomerDataLayer\bin\Debug\CustomerDataLayer.dll.config
+J:\visual studio projects\CustomerDemo\CustomerDataLayer\bin\Debug\CustomerDataLayer.dll
+J:\visual studio projects\CustomerDemo\CustomerDataLayer\bin\Debug\CustomerDataLayer.pdb
+J:\visual studio projects\CustomerDemo\CustomerDataLayer\obj\Debug\ResolveAssemblyReference.cache
+J:\visual studio projects\CustomerDemo\CustomerDataLayer\obj\Debug\CustomerDataLayer.dll
+J:\visual studio projects\CustomerDemo\CustomerDataLayer\obj\Debug\CustomerDataLayer.pdb
